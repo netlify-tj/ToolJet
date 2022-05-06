@@ -1,6 +1,7 @@
 [build]
-  base = "frontend/"
-  publish = "build/"
+  base = "/"
+  publish = "frontend/build/"
+  command = "npm run build:plugins && npm run build:frontend"
 
 [template.environment]
   NODE_ENV = "production"  
